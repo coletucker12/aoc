@@ -266,8 +266,8 @@ func solvePart2(lines []string) int {
 }
 
 func main() {
-	inputFile := "inputs/day7"
-	//inputFile := "input"
+	// inputFile := "inputs/day7"
+	inputFile := "input"
 	lines := utils.ReadFileLines(inputFile)
 	fmt.Printf("Part 1 Answer: %d\n", solvePart1(lines))
 	// 250666192
