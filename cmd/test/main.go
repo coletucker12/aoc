@@ -3,6 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	var test map[string]int
-	fmt.Println(test["test"])
+	sum := 0
+	for i := 0; i <= 454; i++ {
+		sum += i
+	}
+	fmt.Println(sum)
 }

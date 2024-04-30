@@ -2,9 +2,8 @@ package main
 
 import (
 	"fmt"
-	"strings"
-
 	"github.com/coletucker12/aoc/utils"
+	"strings"
 )
 
 type Instruction struct {
@@ -95,7 +94,7 @@ func solvePart2(lines []string) int {
 	}
 	fmt.Println(len(nodes))
 
-    var distances []int
+	var distances []int
 	for _, node := range nodes {
 		cur := node
 		i := 0
@@ -120,7 +119,7 @@ func solvePart2(lines []string) int {
 		}
 		distances = append(distances, numSteps)
 	}
-    return LCM(distances[0], distances[1], distances[2], distances[3], distances[4], distances[5])
+	return LCM(distances[0], distances[1], distances[2], distances[3], distances[4], distances[5])
 }
 
 func main() {
